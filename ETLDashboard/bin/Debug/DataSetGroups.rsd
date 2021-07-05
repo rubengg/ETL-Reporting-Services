@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>DataSourceETL</DataSourceReference>
+      <CommandText>SELECT DISTINCT (SELECT [shortName] FROM [ETL Reporting Services].[dbo].[groups] WHERE name = resolve_ag) AS 'Grupo' FROM ticket ORDER BY 'Grupo' ASC</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Grupo">
+        <DataField>Grupo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

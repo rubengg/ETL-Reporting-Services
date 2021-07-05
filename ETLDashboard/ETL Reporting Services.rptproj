@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ToolsVersion="2.0">
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <DataSources>
+    <ProjectItem>
+      <Name>ETL Reporting Services.rds</Name>
+      <FullPath>ETL Reporting Services.rds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSets>
+    <ProjectItem>
+      <Name>category.rsd</Name>
+      <FullPath>category.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>customer.rsd</Name>
+      <FullPath>customer.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>group.rsd</Name>
+      <FullPath>group.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>month.rsd</Name>
+      <FullPath>month.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>prio.rsd</Name>
+      <FullPath>prio.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>tower.rsd</Name>
+      <FullPath>tower.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>year.rsd</Name>
+      <FullPath>year.rsd</FullPath>
+    </ProjectItem>
+  </DataSets>
+  <Reports>
+    <ProjectItem>
+      <Name>Fuera de oficina.rdl</Name>
+      <FullPath>Fuera de oficina.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Incidentes con CI.rdl</Name>
+      <FullPath>Incidentes con CI.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Incidents with CBI high.rdl</Name>
+      <FullPath>Incidents with CBI high.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MTTR.rdl</Name>
+      <FullPath>MTTR.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>pool.rdl</Name>
+      <FullPath>pool.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>SLA Complains.rdl</Name>
+      <FullPath>SLA Complains.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tendencias por prioridad.rdl</Name>
+      <FullPath>Tendencias por prioridad.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TopTen.rdl</Name>
+      <FullPath>TopTen.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MainMenu.rdl</Name>
+      <FullPath>MainMenu.rdl</FullPath>
+    </ProjectItem>
+  </Reports>
+  <Configurations>
+    <Configuration>
+      <Name>Debug</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Debug</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetServerURL>http://equipoc02/ReportServer</TargetServerURL>
+        <TargetFolder>ETL Reporting Services</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <OverwriteDataSources>true</OverwriteDataSources>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <OverwriteDatasets>true</OverwriteDatasets>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>DebugLocal</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\DebugLocal</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>ETLDashboard</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Release</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Release</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>ETLDashboard</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

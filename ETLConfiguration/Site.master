@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    ETL Reporting 
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false" 
+                    Visible="False">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server" 
+                            visible="False">Login</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome<span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/ConfigGroups.aspx" Text="Groups Configuration"/>
+                        <asp:MenuItem NavigateUrl="~/ConfigCustomers.aspx" Text="Customers Configuration"/>
+                        <asp:MenuItem NavigateUrl="~/ConfigItem.aspx" Text="Configuration Items"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+                <asp:UpdatePanel ID="UpdatePanelManualExecution" runat="server">
+                </asp:UpdatePanel>
+            <!--<asp:UpdateProgress ID="UpdateProgressManualExecution" runat="server" AssociatedUpdatePanelID="UpdatePanelManualExecution">
+                <ProgressTemplate>
+                    <div id="Background"></div>
+                        <div id="Progress"></div>
+                </ProgressTemplate>
+            </asp:UpdateProgress>-->
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+
+<!--<style type="text/css">
+    #Background
+    {
+        position: fixed;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        overflow:hidden;
+        padding:0;
+        margin:0;
+        background-color:#F0F0F0;
+        filter:alpha(opacity=80);
+        opacity:0.8;
+        z-index:100000;
+    }
+    
+    #Progress
+    {
+        position:fixed;
+        top:40%;
+        left:40%;
+        height:20%;
+        width:20%;
+        z-index:100001;
+        background-color:#FFFFFF;
+        border:1px Solid Gray;
+        background-image:url('img/loading.gif');
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+</style>-->
+
+</html>

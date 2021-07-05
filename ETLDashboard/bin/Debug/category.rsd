@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>ETL Reporting Services</DataSourceReference>
+      <CommandText>SELECT DISTINCT category_type
+FROM [ETL Reporting Services].[dbo].[ticket]</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="category_type">
+        <DataField>category_type</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

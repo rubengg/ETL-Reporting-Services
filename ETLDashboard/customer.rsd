@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>ETL Reporting Services</DataSourceReference>
+      <CommandText>SELECT [name]
+FROM [ETL Reporting Services].[dbo].[customers]
+WHERE
+   name &lt;&gt; 'GRUPO MODELO CSS DSS' AND
+   name &lt;&gt; 'GRUPO MODELO TSS'</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="name">
+        <DataField>name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

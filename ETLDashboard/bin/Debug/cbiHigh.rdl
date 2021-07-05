@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <Height>2in</Height>
+    <Style />
+  </Body>
+  <Width>6.5in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="datasourceconnetion">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=EQUIPOC02;Initial Catalog="ETL Reporting Services"</ConnectString>
+        <IntegratedSecurity>true</IntegratedSecurity>
+      </ConnectionProperties>
+      <rd:SecurityType>Integrated</rd:SecurityType>
+      <rd:DataSourceID>0dec3103-23e6-44db-85be-0d74bf951fad</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dtsCbiHigh">
+      <Query>
+        <DataSourceName>datasourceconnetion</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@group">
+            <Value>=Parameters!group.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@category">
+            <Value>=Parameters!category.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@resmonth">
+            <Value>=Parameters!resmonth.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>getCbiHigh</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="incident_id">
+          <DataField>incident_id</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="group">
+      <Query>
+        <DataSourceName>datasourceconnetion</DataSourceName>
+        <CommandText>SELECT DISTINCT [shortName]
+FROM [ETL Reporting Services].[dbo].[groups]
+WHERE shortName IS NOT NULL</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="shortName">
+          <DataField>shortName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="month">
+      <Query>
+        <DataSourceName>datasourceconnetion</DataSourceName>
+        <CommandText>SELECT DISTINCT MONTH(resolved_time) AS 'month'
+FROM ticket
+ORDER BY MONTH(resolved_time) ASC</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="month">
+          <DataField>month</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="group">
+      <DataType>String</DataType>
+      <Prompt>Group</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>group</DataSetName>
+          <ValueField>shortName</ValueField>
+          <LabelField>shortName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
+    <ReportParameter Name="category">
+      <DataType>String</DataType>
+      <Prompt>category</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>INCIDENT</Value>
+            <Label>INCIDENT</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>REQUEST</Value>
+            <Label>REQUEST</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
+    <ReportParameter Name="resmonth">
+      <DataType>String</DataType>
+      <Prompt>Resolved month</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>month</DataSetName>
+          <ValueField>month</ValueField>
+          <LabelField>month</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>4411ee0b-8eab-4449-98c0-9848e8d42578</rd:ReportID>
+</Report>
