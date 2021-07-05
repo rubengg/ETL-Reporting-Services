@@ -1,0 +1,11 @@
+﻿.headerconfigdiv
+{
+    font-family: Arial;
+    font-size: 30px;
+    text-decoration: underline overline;
+    color: #FFFFFF;
+    background-color: #E20074;
+    height: 40px;
+    right: 500px;
+    text-align: center;
+}

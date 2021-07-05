@@ -1,0 +1,86 @@
+﻿.gridview {
+    font-family: Arial;
+    background-color: #FFFFFF;
+    border: solid 1px #A4A4A4 transparent;
+    width: 100%;
+}
+
+.gridViewHeader {
+    background-color: #E20074;
+    color: #FFFFFF;
+    padding: 4px 50px 4px 4px;
+    text-align: left;
+    border-width: 0px;
+    border-collapse: collapse;
+}
+
+.gridViewRow {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-width: 0px;
+    border-collapse: collapse;
+}
+
+.gridViewAltRow {
+     background-color: #A4A4A4;
+     border-width: 0px;
+     border-collapse: collapse;
+}
+
+.gridViewSelectedRow {
+     background-color: #FDD167;
+     color: #7C7C7C;
+     border-width: 0px;
+     border-collapse: collapse;
+}
+
+.gridViewPager 
+{
+     background-color: #7C7C7C;
+     color: #FFFFFF;
+     text-align: left;
+     padding: 0px;
+}
+.gridViewEditRow
+{
+ background-color: #D0D0D0;
+ color: #FFFFFF;
+ text-align: left;
+ padding: 0px;
+}
+
+.gridViewFooter
+{
+ background-color: #BABD5A;
+ color: #FFFFFF;
+ text-align: left;
+ padding: 0px;
+}
+.gridViewSortedAscendingCell
+{
+ background-color: #D0D0D0;
+ color: #FFFFFF;
+ text-align: left;
+ padding: 0px;
+}
+.gridViewSortedAscendingHeader
+{
+ background-color: #E20074 ;
+ color: #FFFFFF;
+ text-align: left;
+ padding: 0px;
+}
+.gridViewSortingDescendingCell
+{
+ background-color: #D0D0D0;
+ color: #FFFFFF;
+ text-align: left;
+ padding: 0px;
+}
+.gridViewSortingDescendingHeader
+{
+ background-color: #E20074 ;
+ color: #FFFFFF;
+ text-align: left;
+ padding: 0px;
+}   

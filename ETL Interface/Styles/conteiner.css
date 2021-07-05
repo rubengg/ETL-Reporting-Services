@@ -1,0 +1,118 @@
+﻿#contenedor
+{
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    display: table;
+}
+#header
+{
+    position: relative;
+    height: 10%;
+    border: solid #E20074;
+}
+#headerleft
+{
+    position:relative;
+    height:100%;
+    Width:50%;
+    float:left;
+    
+}
+#headerright
+{
+    position:relative;
+    height:100%;
+    Width:50%;
+    float:right;
+    
+}
+#headerleft img
+{
+    position: absolute;
+    height:100%;
+}
+#headerright img
+{
+    position: absolute;
+    z-index: 2;
+    height:100%;
+    left:63%;
+}
+#thebody
+{
+    position: relative;
+    height: 80%;
+    border: solid #E20074;
+    padding:20px;
+}
+#left
+{
+    width:33%;
+    height: 100%;
+    clear: left;
+    float: left;
+    border: 1px solid #E20074;
+}
+#middle
+{
+    width:33%;
+    height: 100%;
+    float:left;
+    border: 1px solid #E20074;
+}
+#right
+{
+    width:33%;
+    height: 100%;
+    float: left;
+    border: 1px solid #E20074;    
+}
+#foot
+{
+    position: relative;
+    height: 10%;
+    border: solid #E20074;
+}
+#footleft
+{
+    position:relative;
+    height:100%;
+    Width:40%;
+    float:left;
+}
+#footright
+{
+    height:100%;
+    Width:40%;
+    float:right;
+}
+#footleft img
+{
+    position: absolute;
+    clear: both;
+    bottom:0;
+    height:100%;
+}
+#footright img
+{
+    position: absolute;
+    clear: both;
+    bottom:0;
+    right:0;
+    height:100%;
+}
+.centerdiv
+{
+    position:relative;
+    margin: 0 auto;
+    width:100%;
+    height: 100%;
+    display: table;
+    margin:25% 0 0 0;
+}
+.div3slide
+{
+    height: 50%;
+    text-align:center;
+}
