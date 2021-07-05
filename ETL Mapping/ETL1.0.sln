@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ETL1.0", "ETL1.0\ETL1.0.dtproj", "{51A6B87E-BF68-49CE-9B63-3AD0FC3E7CAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51A6B87E-BF68-49CE-9B63-3AD0FC3E7CAB}.Development|Default.ActiveCfg = Development
+		{51A6B87E-BF68-49CE-9B63-3AD0FC3E7CAB}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
